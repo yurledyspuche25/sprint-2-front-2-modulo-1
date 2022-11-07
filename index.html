@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="container-left">
+            <div>
+                <h1> Learn to code by <br> watching others</h1>
+            </div>
+            <div class="containerP">
+                See how experienced developers solve problems in real-time.<br>
+                watching scripted tutorials is great, but underestanding how <br> developers think is invaluable.
+            </div>
+        </div>
+        
+        <div class="container-right">
+            <div class="blue">
+                <p> <b>Try it free days</b> then $20/mo. thereafter</p>
+            </div>
+                <form action="" id="form">
+                    <div class="control wrong">
+                        <input type="text" placeholder="Name" required id="name">
+                        <div class=" mostrar ocultar"> 
+                            <img class="icon" src="./images/icon-error.svg" alt="" srcset="">
+                        <small class="errorMensaje">First Name cannot be empty</small>
+                        </div>
+                        
+
+                    </div>
+                    <div class="control wrong">
+                        <input type="text" placeholder="Last name" required id="lastname" >
+                        <div class=" mostrar ocultar">
+                            <img class="icon"  src="./images/icon-error.svg" alt="" srcset="">
+                        <small class="errorMensaje">Last Name cannot be empty</small>
+                        </div>
+                        
+                    </div>
+                    <div class="control wrong">
+                        <input type="email" placeholder="Email" required id="email">
+                        <div  class=" mostrar ocultar">
+                            <img class="icon" src="./images/icon-error.svg" alt="" srcset="">
+                        <small class="errorMensaje">Looks like this is not an email</small>
+                        </div>
+                        
+                    </div>
+                    <div class="control  wrong">
+                        <input type="password" placeholder="Password" required id="password">
+                        <div class=" mostrar ocultar">
+                            <img class="icon" src="./images/icon-error.svg" alt="" srcset="">
+                            <small class="errorMensaje">Password cannot be empty</small>
+                        </div>
+                        
+                    </div>
+                    
+                    <button onclick="mostrar()" type="submit" id="btnSubmit">CLAIM YOUR FREE TRIAL</button>
+                    <small>By clicking the button, you are agreeing to our<a href="">Terms and Services</a ></small>
+                </form>
+        </div>
+    </div>
+    <div>
+    <table id="tableUsers">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>LastName</th>
+                <th>Email</th>
+                <th>Password</th>
+                
+            </tr>
+        </thead>
+        <tbody id="tableUsersBody">
+
+        </tbody>
+    </table>
+</div>
+    <script src="./script.js"></script>
+</body>
+
+</html>

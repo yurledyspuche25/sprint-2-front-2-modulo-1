@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+body{
+
+    background-color:  hsl(0, 100%, 74%);
+    background-image: url('./images/bg-intro-desktop.png');
+    width: 100%;
+    height: 100%;
+    color: white;
+   
+}
+.container{
+    max-width: 1440px;
+    min-width: 375px;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 100vh;
+    padding: 50px;
+}
+.containerP{
+    text-align: left;
+}
+
+
+/* izq*/
+.blue{
+    background-color: hsl(248, 32%, 49%);
+    border-radius: 5px;
+    padding: 20px;
+    width: 100%;
+    box-shadow: 0 5px 0 0 rgba(66, 63, 63, 0.313);
+    
+    
+}
+
+form{
+    width: 390px;
+    height: 370px;
+    background-color:white ;
+    padding:30px;
+    margin: auto;
+    margin-top: 15px;
+    border-radius: 4px;
+    flex-direction: column;
+    box-shadow: 0 6px 0 0 rgba(66, 63, 63, 0.313);
+    
+}
+
+input{
+    padding: 10px;
+    width: 100%;
+    margin: 5px;
+    border-radius:5px;
+    border: 1px solid hsl(246, 25%, 77%);
+    text-shadow: 1px hsl(246, 25%, 77%);
+}
+input:focus{
+    border: 1px solid hsl(248, 32%, 49%);
+    outline: none;
+}
+button{
+    background-color: hsl(154, 59%, 51%);
+    border-radius: 5px;
+    border: 1px solid hsl(154, 59%, 40%);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    padding: 15px 25px;
+    display: block;
+    width: 100%;
+    color: white;
+    box-shadow: 0px 1px 0 0 hsl(154, 59%, 40%);
+    margin-top: 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+    
+    }
+
+    button:focus {
+        outline: none;
+    }
+    
+    button:active {
+        box-shadow: 0 0 hsl(154, 59%, 45%);
+        transform: translateY(2px);
+    }
+    
+    .control {
+        position: relative;
+        margin:2px;
+        height: 50px;
+    }
+    
+    input:focus {
+        border: 1.3px solid hsl(248, 32%, 49%);
+        outline: none;
+    }
+    small{
+        color: hsl(246, 25%, 77%);
+        font-size: 9px;
+        margin-left: 20px;
+        
+    }
+    a{
+        text-decoration: none;
+        color: hsl(0, 100%, 74%)
+    }
+    
+   .icon{
+    margin-left: 285px;
+    position: relative;
+    bottom: 40px;
+    display: none;
+   }
+   
+   .errorMensaje{
+    color: hsl(0, 100%, 74%);
+    position: relative;
+    bottom: 47px;
+    margin-left: 197px;
+    display: none;
+    border-color: hsl(0, 100%, 74%);
+
+   }
+
+    #tableUsers, tr, th, td {
+        border: 1px solid hsl(246, 25%, 77%);
+        font-family: 'Poppins', sans-serif;
+        font-size: 12px;
+        
+    
+    }
+    #tableUsers{
+        margin-left: 25px;
+    }
+    
+    @media (max-width: 600px) {
+        body{
+            margin:5px ;
+            
+        }
+        
+      
+        .container-right {
+            margin-top: 50px;
+        }
+        .container-left{
+            margin-top: 50px;
+        }
+          
+        }
+        @media (max-width: 400px){
+            form{
+                margin-left: 10px;
+            }
+
+        }
